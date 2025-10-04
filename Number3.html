@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-yellow-100">
+        <div class="bg-red-200 w-[150px] m-5 p-2">
+            <label for="Num1">Num1:</label>
+            <input class="bg-blue-200 text-center text-white w-[50px]" id="Num1" type="text" />
+
+            <div class="py-2">
+                <label for="Num2">Num2:</label>
+                <input class="bg-blue-200 text-center text-white w-[50px]" id="Num2" type="text" />
+            </div>
+
+            <div class="pb-5">
+                <label for="Result">Result:</label>
+                <input class="bg-blue-200 text-center text-white w-[50px]" id="Result" type="text" />
+            </div>
+
+            <div class="bg-red-100 p-3">
+                <label>Operations:</label><br>
+
+                <label>
+                    <input type="radio" name="operation"
+                        onclick="document.getElementById('Result').value =
+                            Number(document.getElementById('Num1').value) +
+                            Number(document.getElementById('Num2').value)">
+                    +
+                </label><br>
+
+                <label>
+                    <input type="radio" name="operation"
+                        onclick="document.getElementById('Result').value =
+                            Number(document.getElementById('Num1').value) -
+                            Number(document.getElementById('Num2').value)">
+                    -
+                </label><br>
+
+                <label>
+                    <input type="radio" name="operation"
+                        onclick="document.getElementById('Result').value =
+                            Number(document.getElementById('Num1').value) *
+                            Number(document.getElementById('Num2').value)">
+                    *
+                </label><br>
+
+                <label>
+                    <input type="radio" name="operation"
+                        onclick="document.getElementById('Result').value =
+                            Number(document.getElementById('Num1').value) /
+                            Number(document.getElementById('Num2').value)">
+                    /
+                </label><br>
+            </div>
+        </div>
+    </body>
+</html>
