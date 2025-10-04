@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-yellow-100">
+        <div class="bg-red-200 w-[150px] m-5 p-2">
+            <label for="Length">Length:</label>
+            <input class="bg-blue-200 text-center text-white w-[50px]" id="Length" type="text" />
+
+            <div class="py-2">
+                <label for="Width">Width:</label>
+                <input class="bg-blue-200 text-center text-white w-[50px]" id="Width" type="text" />
+            </div>
+
+            <div class="pb-5">
+                <label for="Result">Result:</label>
+                <input class="bg-blue-200 text-center text-white w-[50px]" id="Result" type="text" />
+            </div>
+
+            <div class="bg-red-100 p-3">
+                <label><strong>Op:</strong></label><br>
+
+                <label>
+                    <input type="checkbox" name="multiplication"
+                        onclick="document.getElementById('Result').value =
+                            Number(document.getElementById('Length').value) *
+                            Number(document.getElementById('Width').value)">
+                    Area
+                </label><br>
+            </div>
+        </div>
+    </body>
+</html>
