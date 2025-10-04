@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-yellow-100">
+        <div class="bg-red-300 w-[260px] m-5 p-2">
+            <label for="Num1">Num1</label>
+            <input class="bg-blue-200 text-center text-white" id="Num1" type="text" />
+
+            <div class="py-2">
+                <label for="Num2">Num2</label>
+                <input class="bg-blue-200 text-center text-white" id="Num2" type="text" />
+            </div>
+
+            <div class="pb-2">
+                <label for="Result">Result</label>
+                <input class="bg-blue-200 text-center text-white" id="Result" type="text" />
+            </div>
+
+            <button class="bg-green-400 p-1 rounded"
+                onclick="document.getElementById('Result').value =
+                    Number(document.getElementById('Num1').value) +
+                    Number(document.getElementById('Num2').value)">
+                Add
+            </button>
+
+            <button class="bg-orange-300 p-1 rounded"
+                onclick="document.getElementById('Result').value =
+                    Number(document.getElementById('Num1').value) -
+                    Number(document.getElementById('Num2').value)">
+                Sub
+            </button>
+        </div>
+    </body>
+</html>
